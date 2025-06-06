@@ -1,0 +1,66 @@
+GIT HUB 
+
+commands :                                 description
+
+1) git remote add origin <repo-url>  -  link local repo to a remote repo
+2) git config --global user.name "Your Name" -set your name for commits
+3) git config --global user.email "email" -set your email for commits
+4) git diff                           -  view unstaged changes
+
+
+
+commands to push a file from local system to GitHub account :
+
+User@LAPTOP-NDR4HMLC MINGW64 ~
+$ cd /c/Users/User/OneDrive/Desktop/"summer -internship"/Day-2
+
+User@LAPTOP-NDR4HMLC MINGW64 ~/OneDrive/Desktop/summer -internship/Day-2
+$ git init
+Initialized empty Git repository in C:/Users/User/OneDrive/Desktop/summer -internship/Day-2/.git/
+
+User@LAPTOP-NDR4HMLC MINGW64 ~/OneDrive/Desktop/summer -internship/Day-2 (master)
+$ git add .
+
+User@LAPTOP-NDR4HMLC MINGW64 ~/OneDrive/Desktop/summer -internship/Day-2 (master)
+$ git commit -m "Initial Commit"
+[master (root-commit) d053837] Initial Commit
+ 1 file changed, 65 insertions(+)
+ create mode 100644 Main.java
+
+User@LAPTOP-NDR4HMLC MINGW64 ~/OneDrive/Desktop/summer -internship/Day-2 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+User@LAPTOP-NDR4HMLC MINGW64 ~/OneDrive/Desktop/summer -internship/Day-2 (master)
+$ git log
+commit d0538377d10ebd9e55e11feeded944dbb380d275 (HEAD -> master)
+Author: Yasaswini <yasaswiniachyutha300@gmail.com>
+Date:   Fri Jun 6 11:16:35 2025 +0530
+
+    Initial Commit
+
+User@LAPTOP-NDR4HMLC MINGW64 ~/OneDrive/Desktop/summer -internship/Day-2 (master)
+$ ^C
+
+User@LAPTOP-NDR4HMLC MINGW64 ~/OneDrive/Desktop/summer -internship/Day-2 (master)
+$ ^C
+
+User@LAPTOP-NDR4HMLC MINGW64 ~/OneDrive/Desktop/summer -internship/Day-2 (master)
+$ git remote add origin https://github.com/yasaswiniachyutha999/git-practice
+
+User@LAPTOP-NDR4HMLC MINGW64 ~/OneDrive/Desktop/summer -internship/Day-2 (master)
+$ git branch -M main
+
+User@LAPTOP-NDR4HMLC MINGW64 ~/OneDrive/Desktop/summer -internship/Day-2 (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 728 bytes | 728.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/yasaswiniachyutha999/git-practice
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
