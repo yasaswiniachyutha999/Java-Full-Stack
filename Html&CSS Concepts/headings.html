@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<title>Html</title>
+	<head>
+		<style>
+			a{
+				color : blue;
+			}
+			.box{
+					border: 2px solid #ccc;
+					padding: 15px;
+					margin: 15px 0;
+					border-radius: 10px;
+					background-color: #f9f9f9;
+    			}
+			html {
+      				scroll-behavior: smooth;
+    			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+		<h1> Tag Showcase</h1>
+		<div class="box">
+		<a href="#text">Text</a>|
+		<a href="#lists">Lists</a>|
+		<a href="#media">Media</a>|
+		<a href="#form">Form</a>|
+		<a href="#table">Table</a>|
+		</div>
+		</div>
+		<div class="box" id="text">
+		<h1>Text Elements</h1>
+		<h1>Heading-1</h1>
+		<h2>Heading-2</h2>
+		<h3>Heading-3</h3>
+		<h4>Heading-4</h4>
+		<h5>Heading-5</h5>
+		<h6>Heading-6</h6>
+
+		<p>This is a <strong>Strong</strong>, <em>emphasized</em>, <u>underlined</u> text with a highlight.</p>
+		<p><small>Small text</small>, <sub>Subscript</sub>, <sup>superscript</sup>, and <code>inline code</code>.</p>
+		<blockquote>This is a blockquote.</blockquote>
+
+		<pre>
+			<code>
+			function hello() {
+  			console.log("Hello, world!");
+			}
+  		    </code>
+		</pre>
+
+  		<p>HTML is the language of the web.<br>
+  		<cite>Contact: you@example.com</cite></p>
+		</div>
+		<div class="box" id="lists">
+		<h1><strong>List types</strong></h1>
+		<ul>
+			<li>unordered item 1</li>
+			<li>unordered item 2</li>
+		</ul>
+		<ol type="1">
+  			<li>ordered item 1</li>
+  			<li>ordered item 2</li>
+		</ol>
+		<pre>
+			HTML
+				Hypertext markup language.
+			CSS
+				Cascading Style Sheet.
+		</pre>
+		</div>
+
+		<div class="box" id="media">
+		<h1><strong>Media Elements</strong></h1>
+
+		<p>Here is an image :</p>
+		<img src="image.jpg" alt="placeholder image">
+
+		<p>Here is a audio :</p>
+		<audio controls>
+			<source src="audiofile.mp3" type="audio/mpeg">
+  			Your browser does not support the audio element. 
+		</audio>
+
+
+		<p>Here is a video :</p>
+		<video width="200" height="140" controls>
+  			<source src="videofile.mp4" type="video/mp4">
+  			Your browser does not support the video tag.
+		</video>
+		</div>
+
+		<div class="box" id="form">
+		<h1><strong>Form Elements</strong></h1>
+
+		<form action="#" method="post">
+
+			<!-- Name -->
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name"><br><br>
+
+			<!-- Email -->
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email"><br><br>
+
+			<!-- Password -->
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password"><br><br>
+
+			<!-- Gender -->
+			<label>Gender:</label><br>
+			<input type="radio" id="male" name="gender" value="Male">
+			<label for="male">Male</label><br>
+
+			<input type="radio" id="female" name="gender" value="Female">
+			<label for="female">Female</label><br><br>
+
+			<!-- Languages -->
+			<label>Languages Known:</label><br>
+			<input type="checkbox" id="english" name="language" value="English">
+			<label for="english">English</label><br>
+
+			<input type="checkbox" id="hindi" name="language" value="Hindi">
+			<label for="hindi">Hindi</label><br>
+
+			<input type="checkbox" id="telugu" name="language" value="Telugu">
+			<label for="telugu">Telugu</label><br><br>
+
+			<!-- Description -->
+			<label for="desc">Description:</label><br>
+			<textarea id="desc" name="desc" rows="4" cols="40" placeholder="Tell us about yourself..."></textarea><br><br>
+
+			<!-- Submit -->
+			<input type="submit" value="Submit">
+
+  		</form>
+		</div>
+
+		<div class="box" id="table">
+		<h1><strong>Table</strong></h1>
+		<p>Sample Table</p>
+		<table border="1">
+			<tr>
+				<th>Item</th>
+				<th>Price</th>
+			</tr>
+			<tr>
+				<td>Pen</td>
+				<td>$1</td>
+			</tr>
+			<tr>
+				<td>Notebook</td>
+				<td>$3</td>
+			</tr>
+		</table>
+		</div>
+
+		<div class="box">
+		<article>
+			<h2>Article Example</h2>
+			<p>This an example of Article tag.</p>
+		</article>
+		</div>
+
+		<div class="box">
+		<aside>
+			<h2>Aside Example</h2>
+			<p>This an example of Aside tag.</p>
+		</aside>
+		</div>
+	</body>
+</html>
